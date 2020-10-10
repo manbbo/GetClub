@@ -62,7 +62,6 @@ Configure the Environment Variables needed at your machine, with "flutter" as th
 
 ## Usage example
 
-<!--
 O Get Club possui a funcionalidade primária de conectar microempreendedores individuais,
 micro e pequenas empresas para contratação de serviços ou compra de produtos de outros usuários.
 Além disso, a aplicação também é capaz de fornecer um fundo de investimentos com
@@ -85,9 +84,6 @@ Ele é feito para ser usado por:
 - micro e pequeno empreendimento;
 - o empreendimento que busca serviços ou produtos para seu negócio (B2B);
 - o empreendimento que fornece serviços ou produtos para outros negócios (B2B).
-
-_For more examples and information about what is a B corporation, please refer to the [B Corporation Website](https://bcorporation.net/) and to a website that explains [what is a B Corporation](https://bcorporation.net/about-b-corps)._
--->
 
 # Development setup
 
