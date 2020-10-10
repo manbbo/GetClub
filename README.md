@@ -1,1 +1,136 @@
 # GetClub
+
+<!--![](Thumbnail.png)-->
+
+> O aplicativo Get Club tem como objetivo promover a troca de serviços e produtos com pagamento envolvido entre empresas (B2B) de forma a fomentar o mercado e dar visibilidade a essas empresas.
+
+### Show some :heart: and star the repo to support the project
+
+[![GitHub stars](https://img.shields.io/github/stars/manbbo/GetClub.svg?style=social&label=Star)](https://github.com/manbbo/GetClub)
+[![GitHub forks](https://img.shields.io/github/forks/manbbo/GetClub.svg?style=social&label=Fork)](https://github.com/manbbo/GetClub/fork)
+[![GitHub watchers](https://img.shields.io/github/watchers/manbbo/GetClub.svg?style=social&label=Watch)](https://github.com/manbbo/GetClub)
+[![GitHub followers](https://img.shields.io/github/followers/manbbo.svg?style=social&label=Follow)](https://github.com/manbbo)
+<!--
+### Some Screenshots
+
+- Boot and First Screen
+
+  <img src="https://i.imgur.com/11bokqL.jpg"  height="400em"/>
+    <img src="https://i.imgur.com/oFBCTtv.jpg"  height="400em"/>
+
+- HomePage
+
+    <img src="https://i.imgur.com/tlCEZt8.jpg" height="400em"/>
+    <img src="https://i.imgur.com/FJpyKtU.jpg"  height="400em"/>
+    <img src="https://i.imgur.com/cElMpFJ.jpg"  height="400em"/>
+      <img src="https://i.imgur.com/6SCPoDA.jpg" height="400em" />
+      <img src="https://i.imgur.com/epN6dFn.jpg" height="400em"/>
+
+- Help Button / Sponsorship Button
+
+<img src="https://i.imgur.com/U71xuWZ.jpg" height="400em" /> <img src="https://i.imgur.com/kCfeecW.jpg" height="400em" /> <img src="https://i.imgur.com/u5QDRKO.jpg" height="400em" /><img src="https://i.imgur.com/7DJsu3S.jpg" height="400em" /><img src="https://i.imgur.com/OhsTcFF.jpg" height="400em"  /><img src="https://i.imgur.com/ZFDvtMP.jpg" height="400em" />
+-->
+
+
+## Installation
+
+If you want to use Android Studio, then [download](https://developer.android.com/studio?hl=es) it through the website;
+
+Else, you can just use Visual Code or any other IDE that supports Flutter;
+
+
+
+### If you downloaded Android Studio:
+
+Install it into your machine;
+
+Go to File>Settings>Go to Pluggins and search and download Flutter;
+
+Configure the Environment Variables needed at your machine, with "flutter" as the name and "C:\flutter" as the path if required;
+
+
+
+### Else:
+
+Download [Flutter](https://flutter.dev/docs/get-started/install);
+
+Unzip it to "C:\". It can be other path but just make sure to know where it is;
+
+Configure the Environment Variables needed at your machine, with "flutter" as the name and "C:\flutter" as the path;
+
+
+
+## Usage example
+
+<!--
+Call for Help can be used by Enterprises that wants to sign-up their employees to help with social and environmental development.
+
+It can also be used by:
+- people who wants to do any kind of volunteering;
+- people who wants to help individually (donating or providing services);
+- researchers and academics;
+- people or community that has sanitation, health and/or food needs.
+
+_For more examples and information about what is a B corporation, please refer to the [B Corporation Website](https://bcorporation.net/) and to a website that explains [what is a B Corporation](https://bcorporation.net/about-b-corps)._
+-->
+
+## Development setup
+
+To develop, you gonna need to:
+- have configured Flutter at your machine and all environment variables needed
+- have an IDE that supports Flutter
+- have access to CMD or PowerShell
+
+Then, you pull the project from the repository and execute:
+
+```sh
+flutter pub get
+flutter pub upgrade
+```
+
+and then you're going to be able to do
+
+```sh
+flutter run
+```
+
+## Release History
+
+* 0.0.1
+    * Work in progress prototype
+
+
+### Created By
+
+[Manbbo](https://github.com/manbbo) ([Instagram](https://www.instagram.com/elmanbbo)) ([Linkedin](https://www.linkedin.com/in/manbbo/))
+
+[Lucas G Silva](https://github.com/LucasGSilva21) <!-- ([Instagram](https://www.instagram.com/mishellesouza)) ([Linkedin](https://www.linkedin.com/in/mishelle-sousa-3b8159135/)) -->
+
+[Alexandrite]() ([Linkedin]())
+
+[Priscylla]()
+
+[Dayanne]()
+
+<br/>
+
+> If you found this project useful, if it helped you solve a problem or create another solution, or simply you liked it and you want to thank me, finance me and keep me alive by donating! :smile:
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F8R2Q5GT93MJN)
+[<img align="left" alt="BTC Button" width="100px" src="https://github.com/manbbo/manbbo/blob/master/btc_button.png" />](https://www.blockonomics.co/pay-url/0d920b260a8311eb)
+
+## Contributing
+
+1. [Fork it](https://github.com/manbbo/call_for_help/fork)
+2. Create your feature branch (`git checkout -b feature/fooBar`)
+3. Commit your changes (`git commit -am 'Add some fooBar'`)
+4. Push to the branch (`git push origin feature/fooBar`)
+5. Create a new Pull Request
+
+<!-- Markdown link & img dfn's -->
+[flutter-image]: https://flutter.dev/docs/get-started/install
+[npm-url]: https://npmjs.org/package/datadog-metrics
+[npm-downloads]: https://img.shields.io/npm/dm/datadog-metrics.svg?style=flat-square
+[travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
+[travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
+[wiki]: https://github.com/yourname/yourproject/wiki
