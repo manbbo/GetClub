@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
-class User_Page extends StatefulWidget {
+class Chat_Page extends StatefulWidget {
   @override
-  _User_PageState createState() => _User_PageState();
+  _Chat_PageState createState() => _Chat_PageState();
 }
 
 // ignore: camel_case_types
-class _User_PageState extends State<User_Page> {
+class _Chat_PageState extends State<Chat_Page> {
   @override
   Widget build(BuildContext context) {
     return new Stack();
