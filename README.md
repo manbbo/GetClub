@@ -121,9 +121,9 @@ flutter run
 
 Alexandrite ([Linkedin](https://www.linkedin.com/in/alexandrite-oliveira-55b79b198))
 
-[Priscylla]()
+[Priscylla Boente](https://www.linkedin.com/in/priscyllaboente/)
 
-[Dayhaner]()
+[Maria Daiane](https://www.linkedin.com/in/maria-daiane)
 
 <br/>
 

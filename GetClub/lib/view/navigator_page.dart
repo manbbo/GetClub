@@ -48,9 +48,7 @@ class _NavigationState extends State<Navigation> {
             label: titles[1]
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.backpack),
-              label: titles[2]
-          ),
+            icon: Icon(Icons.shopping_basket), label: titles[2]),
           BottomNavigationBarItem(
             icon: Icon(Icons.chat_bubble),
               label: titles[3]
