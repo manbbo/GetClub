@@ -32,34 +32,6 @@
 -->
 
 
-## Installation
-
-If you want to use Android Studio, then [download](https://developer.android.com/studio?hl=es) it through the website;
-
-Else, you can just use Visual Code or any other IDE that supports Flutter;
-
-
-
-### If you downloaded Android Studio:
-
-Install it into your machine;
-
-Go to File>Settings>Go to Pluggins and search and download Flutter;
-
-Configure the Environment Variables needed at your machine, with "flutter" as the name and "C:\flutter" as the path if required;
-
-
-
-### Else:
-
-Download [Flutter](https://flutter.dev/docs/get-started/install);
-
-Unzip it to "C:\". It can be other path but just make sure to know where it is;
-
-Configure the Environment Variables needed at your machine, with "flutter" as the name and "C:\flutter" as the path;
-
-
-
 ## Usage example
 
 O Get Club possui a funcionalidade primária de conectar microempreendedores individuais,
@@ -88,6 +60,33 @@ Ele é feito para ser usado por:
 # Development setup
 
 ## Flutter Environment
+
+## Installation
+
+If you want to use Android Studio, then [download](https://developer.android.com/studio?hl=es) it through the website;
+
+Else, you can just use Visual Code or any other IDE that supports Flutter;
+
+
+
+### If you downloaded Android Studio:
+
+Install it into your machine;
+
+Go to File>Settings>Go to Pluggins and search and download Flutter;
+
+Configure the Environment Variables needed at your machine, with "flutter" as the name and "C:\flutter" as the path if required;
+
+
+
+### Else:
+
+Download [Flutter](https://flutter.dev/docs/get-started/install);
+
+Unzip it to "C:\". It can be other path but just make sure to know where it is;
+
+Configure the Environment Variables needed at your machine, with "flutter" as the name and "C:\flutter" as the path;
+
 
 To develop, you gonna need to:
 - have configured Flutter at your machine and all environment variables needed
