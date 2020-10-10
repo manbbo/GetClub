@@ -63,18 +63,35 @@ Configure the Environment Variables needed at your machine, with "flutter" as th
 ## Usage example
 
 <!--
-Call for Help can be used by Enterprises that wants to sign-up their employees to help with social and environmental development.
+O Get Club possui a funcionalidade primária de conectar microempreendedores individuais,
+micro e pequenas empresas para contratação de serviços ou compra de produtos de outros usuários.
+Além disso, a aplicação também é capaz de fornecer um fundo de investimentos com
+seguro para essas empresas, afim de promover seu crescimento.
 
-It can also be used by:
-- people who wants to do any kind of volunteering;
-- people who wants to help individually (donating or providing services);
-- researchers and academics;
-- people or community that has sanitation, health and/or food needs.
+A conexão entre micro e pequenos empreendimentos para contratação de serviços e/ou
+comércio de bens se dará através de um aplicativo mobile de acesso exclusivo aos
+usuários das máquinas Getnet, em uma espécie de pacote de prestação de serviços.
+Os usuários poderão pesquisar empresas cadastradas, negociar e fechar acordos com os demais
+usuários desta cooperativa/ deste clube de vantagens.
+
+Já o consórcio financeiro, se trata de depósitos e/ou transferências feitas por
+empreendedores para a Getnet investir e devolver com correção. Caso necessário,
+será possível fazer retiradas para completar o pagamento de matéria prima ou pessoal adicional
+para a prestação do que foi acordado com outro usuário.
+Será possível ainda fazer a retirada em casos de imprevistos emergenciais.
+
+Ele é feito para ser usado por:
+- empreendedores individuais;
+- micro e pequeno empreendimento;
+- o empreendimento que busca serviços ou produtos para seu negócio (B2B);
+- o empreendimento que fornece serviços ou produtos para outros negócios (B2B).
 
 _For more examples and information about what is a B corporation, please refer to the [B Corporation Website](https://bcorporation.net/) and to a website that explains [what is a B Corporation](https://bcorporation.net/about-b-corps)._
 -->
 
-## Development setup
+# Development setup
+
+## Flutter Environment
 
 To develop, you gonna need to:
 - have configured Flutter at your machine and all environment variables needed
@@ -99,6 +116,7 @@ flutter run
 * 0.0.1
     * Work in progress prototype
 
+## Node Environment
 
 ### Created By
 
