@@ -2,7 +2,7 @@
 
 <!--![](Thumbnail.png)-->
 
-> O aplicativo Get Club tem como objetivo promover a troca de serviços e produtos com pagamento envolvido entre empresas (B2B) de forma a fomentar o mercado e dar visibilidade a essas empresas.
+> O aplicativo Get Club tem como objetivo promover a troca de serviços e produtos com pagamento envolvido entre empresas (B2B) e prover consórcios de forma a fomentar o mercado e dar visibilidade a essas empresas.
 
 ### Show some :heart: and star the repo to support the project
 
@@ -121,7 +121,7 @@ flutter run
 
 ## Contributing
 
-1. [Fork it](https://github.com/manbbo/call_for_help/fork)
+1. [Fork it](https://github.com/manbbo/getclub/fork)
 2. Create your feature branch (`git checkout -b feature/fooBar`)
 3. Commit your changes (`git commit -am 'Add some fooBar'`)
 4. Push to the branch (`git push origin feature/fooBar`)
