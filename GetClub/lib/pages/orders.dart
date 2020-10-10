@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
 // ignore: camel_case_types
-class User_Page extends StatefulWidget {
+class Orders_Page extends StatefulWidget {
   @override
-  _User_PageState createState() => _User_PageState();
+  _Orders_PageState createState() => _Orders_PageState();
 }
 
 // ignore: camel_case_types
-class _User_PageState extends State<User_Page> {
+class _Orders_PageState extends State<Orders_Page> {
   @override
   Widget build(BuildContext context) {
     return new Stack();

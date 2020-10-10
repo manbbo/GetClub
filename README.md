@@ -52,7 +52,7 @@ para a prestação do que foi acordado com outro usuário.
 Será possível ainda fazer a retirada em casos de imprevistos emergenciais.
 
 Ele é feito para ser usado por:
-- empreendedores individuais;
+- microempreendedores individuais;
 - micro e pequeno empreendimento;
 - o empreendimento que busca serviços ou produtos para seu negócio (B2B);
 - o empreendimento que fornece serviços ou produtos para outros negócios (B2B).
@@ -123,7 +123,7 @@ Alexandrite ([Linkedin](https://www.linkedin.com/in/alexandrite-oliveira-55b79b1
 
 [Priscylla]()
 
-[Dayanne]()
+[Dayhaner]()
 
 <br/>
 
