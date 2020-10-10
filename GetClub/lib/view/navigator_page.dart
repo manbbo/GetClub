@@ -39,24 +39,14 @@ class _NavigationState extends State<Navigation> {
         onTap: (index) => _selectIndex(index),
         currentIndex: indexer,
         items: [
+          BottomNavigationBarItem(icon: Icon(Icons.home), label: titles[0]),
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-            label: titles[0]
-          ),
+              icon: Icon(Icons.youtube_searched_for), label: titles[1]),
           BottomNavigationBarItem(
-            icon: Icon(Icons.search),
-            label: titles[1]
-          ),
+              icon: Icon(Icons.shopping_basket), label: titles[2]),
           BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_basket), label: titles[2]),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.chat_bubble),
-              label: titles[3]
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.person),
-              label: titles[4]
-          )
+              icon: Icon(Icons.chat_bubble), label: titles[3]),
+          BottomNavigationBarItem(icon: Icon(Icons.person), label: titles[4])
         ],
       ),
     );
