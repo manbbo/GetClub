@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:getclub/pages/chat.dart';
 import 'package:getclub/pages/home.dart';
-import 'package:getclub/pages/orders.dart';
 import 'package:getclub/pages/search.dart';
 import 'package:getclub/pages/user.dart';
 
@@ -11,8 +10,13 @@ class Navigation extends StatefulWidget {
 }
 
 class _NavigationState extends State<Navigation> {
-  List<String> titles = ["HOME", "BUSCAR", "MEUS PEDIDOS", "CHAT", "PERFIL"];
-  List<Widget> bodies = [new Home_Page(), new Search_Page(), new Orders_Page(), new Chat_Page(), new User_Page()];
+  List<String> titles = ["HOME", "BUSCAR", "CHAT", "PERFIL"];
+  List<Widget> bodies = [
+    new Home_Page(),
+    new Search_Page(),
+    new Chat_Page(),
+    new User_Page()
+  ];
 
   int indexer = 0;
 
@@ -33,20 +37,32 @@ class _NavigationState extends State<Navigation> {
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: new Color(0xFFa8131d),
         unselectedItemColor: Colors.black54,
-        showSelectedLabels: false,
-        showUnselectedLabels: false,
         iconSize: 30,
+        showUnselectedLabels: true,
+        showSelectedLabels: true,
         onTap: (index) => _selectIndex(index),
         currentIndex: indexer,
         items: [
-          BottomNavigationBarItem(icon: Icon(Icons.home), label: titles[0]),
           BottomNavigationBarItem(
-              icon: Icon(Icons.youtube_searched_for), label: titles[1]),
+              icon: Container(
+                height: 0,
+              ),
+              label: titles[0]),
           BottomNavigationBarItem(
-              icon: Icon(Icons.shopping_basket), label: titles[2]),
+              icon: Container(
+                height: 0,
+              ),
+              label: titles[1]),
           BottomNavigationBarItem(
-              icon: Icon(Icons.chat_bubble), label: titles[3]),
-          BottomNavigationBarItem(icon: Icon(Icons.person), label: titles[4])
+              icon: Container(
+                height: 0,
+              ),
+              label: titles[2]),
+          BottomNavigationBarItem(
+              icon: Container(
+                height: 0,
+              ),
+              label: titles[3])
         ],
       ),
     );
