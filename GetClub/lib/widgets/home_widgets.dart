@@ -10,7 +10,6 @@ class Home_Widgets extends StatefulWidget {
 class _Home_WidgetsState extends State<Home_Widgets> {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    throw UnimplementedError();
+    return new Stack();
   }
 }

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:getclub/view/navigator_page.dart';
 
 // ignore: must_be_immutable
 class LoginContainer extends StatefulWidget {
-  TextEditingController username = new TextEditingController(),
-      password = new TextEditingController();
+  TextEditingController username =
+          new TextEditingController(text: "paulo.silva@getclub.com"),
+      password = new TextEditingController(text: "thisisapassword");
 
   GlobalKey user = new GlobalKey(),
       pass = new GlobalKey(),
@@ -21,8 +21,6 @@ class _LoginContainerState extends State<LoginContainer> {
   Widget build(BuildContext context) {
     return new Container(
       alignment: Alignment.center,
-      height: MediaQuery.of(context).size.height,
-      width: MediaQuery.of(context).size.width,
       child: new Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getclub/widgets/search_widgets.dart';
 
 // ignore: camel_case_types
 class Search_Page extends StatefulWidget {
@@ -8,8 +9,12 @@ class Search_Page extends StatefulWidget {
 
 // ignore: camel_case_types
 class _Search_PageState extends State<Search_Page> {
+  var search = new SearchWidget();
+
   @override
   Widget build(BuildContext context) {
-    return new Stack();
+    return new Stack(
+      children: [SearchWidget()],
+    );
   }
 }
