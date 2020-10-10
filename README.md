@@ -104,9 +104,9 @@ flutter run
 
 [Manbbo](https://github.com/manbbo) ([Instagram](https://www.instagram.com/elmanbbo)) ([Linkedin](https://www.linkedin.com/in/manbbo/))
 
-[Lucas G Silva](https://github.com/LucasGSilva21) <!-- ([Instagram](https://www.instagram.com/mishellesouza)) ([Linkedin](https://www.linkedin.com/in/mishelle-sousa-3b8159135/)) -->
+[Lucas G Silva](https://github.com/LucasGSilva21) ([Linkedin](https://www.linkedin.com/in/lucas-gabriel-30aab4183/))
 
-[Alexandrite]() ([Linkedin]())
+Alexandrite ([Linkedin](https://www.linkedin.com/in/alexandrite-oliveira-55b79b198))
 
 [Priscylla]()
 
