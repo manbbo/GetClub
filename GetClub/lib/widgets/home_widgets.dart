@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:getclub/view/entrepreneur_page.dart';
 
 // ignore: camel_case_types
 class Home_Widgets extends StatefulWidget {
@@ -24,9 +25,13 @@ class _Home_WidgetsState extends State<Home_Widgets> {
         new Positioned(
           top: 170,
           width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height,
+          //height: MediaQuery.of(context).size.height,
           child: HomeCarousel(),
-        )
+        ),
+        new Positioned(
+            top: 450,
+            width: MediaQuery.of(context).size.width,
+            child: HomeProfessionals())
       ],
     );
   }
@@ -107,7 +112,7 @@ class _HomeCarouselState extends State<HomeCarousel> {
     items = List<Widget>();
 
     for (int i = 0; i < 6; i++) {
-      items.add(CarouselItems('oficinas', 'Oficinas Mecânicas'));
+      items.add(CarouselItems('oficinas', 'Mecânicos'));
     }
   }
 
@@ -123,7 +128,7 @@ class _HomeCarouselState extends State<HomeCarousel> {
           height: 40,
           padding: EdgeInsets.only(left: 22),
           child: Text("Os melhores das categorias",
-            style: TextStyle(color: new Color(0xff413E3F), fontSize: 16),),
+            style: TextStyle(color: new Color(0xff413E3F), fontSize: 20),),
         ),
         Container(
           padding: EdgeInsets.only(top: 35),
@@ -145,6 +150,99 @@ class _HomeCarouselState extends State<HomeCarousel> {
           ),
         )
       ],
+    );
+  }
+}
+
+class HomeProfessionals extends StatefulWidget {
+  @override
+  _HomeProfessionalsState createState() => _HomeProfessionalsState();
+}
+
+class _HomeProfessionalsState extends State<HomeProfessionals> {
+  Widget botao(String image, String name) {
+    return new GestureDetector(
+      onTap: () {
+        Navigator.of(context).push(
+            new MaterialPageRoute(builder: (BuildContext context) {
+              return new EntrepreneurPage(
+                image: image,
+                name: name,
+                address: "Rua dos Topázios 01, Bairro, RJ - RJ",
+                description: "oferece serviços de limpeza domiciliar e empresarial. Já tem mais de 15 anos no mercado, oferecendo o melhor do serviço de organização e limpeza para seus clientes. Agenda de novembro aberta.",
+                evalAndSector: " (4,5) Manutenção e Limpeza",);
+            }));
+      },
+      child: Container(
+        width: 333,
+        height: 67,
+        padding: EdgeInsets.all(10),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(20),
+            color: Colors.white,
+            border: Border.all(color: Colors.black54)
+        ),
+        child: Row(
+          children: [
+            new Container(
+              width: 48,
+              height: 48,
+              child: Image(image: AssetImage("assets/images/home/$image.png")),
+            ),
+            new Container(width: 10,),
+            Container(
+              width: 220,
+              child: Column(
+                children: [
+                  new Container(height: 5,),
+                  new Container(
+                    width: 220,
+                    child: Text(name, style: TextStyle(fontSize: 14),),
+                  ),
+                  Row(
+                    children: [
+                      Container(
+                        width: 19,
+                        height: 19,
+                        child: Image(
+                            image: AssetImage("assets/images/home/star.png")),
+                      ),
+                      Text(" (4,5) - 3km")
+                    ],
+                  )
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      width: MediaQuery
+          .of(context)
+          .size
+          .width,
+      child: new Column(
+        children: [
+          new Container(
+            width: MediaQuery
+                .of(context)
+                .size
+                .width,
+            padding: EdgeInsets.only(left: 22),
+            child: Text(
+              "Empreendedores na sua região", style: TextStyle(fontSize: 20),),
+          ),
+          Container(height: 30,),
+          botao("avatar1", "Adriana Serviços de Tecnologia"),
+          Container(height: 22,),
+          botao("avatar2", "Personal Home"),
+        ],
+      ),
     );
   }
 }
