@@ -158,7 +158,83 @@ class _UserInfoState extends State<UserInfo> {
                         ))),
                     textColor: Color(0xFFa8131d),
                     color: Colors.white,
-                    onPressed: () {},
+                    onPressed: () {
+                      showDialog(
+                        context: context,
+                        builder: (BuildContext context) {
+                          // retorna um objeto do tipo Dialog
+                          return AlertDialog(
+                            title: new Text(
+                              "Deletar Conta",
+                              textAlign: TextAlign.center,
+                            ),
+                            content: new Text(
+                              "Que pena está deletando sua conta."
+                              "\nVocê tem certeza dessa decisão?",
+                              textAlign: TextAlign.center,
+                              style: TextStyle(fontSize: 13),
+                            ),
+                            actions: <Widget>[
+                              // define os botões na base do dialogo
+                              Container(
+                                width: MediaQuery.of(context).size.width,
+                                child: new Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  children: [
+                                    new Container(
+                                      width: 102,
+                                      height: 41,
+                                      child: new FlatButton(
+                                        child: new Text(
+                                          "Sim",
+                                          style: TextStyle(fontSize: 24),
+                                        ),
+                                        onPressed: () {
+                                          Navigator.of(context).pop();
+                                        },
+                                        shape: RoundedRectangleBorder(
+                                            borderRadius:
+                                                BorderRadius.circular(10.0),
+                                            side: BorderSide(
+                                                color: Color(
+                                              0xFFa8131d,
+                                            ))),
+                                        textColor: Color(0xFFa8131d),
+                                        color: Colors.white,
+                                      ),
+                                    ),
+                                    new Container(
+                                      width: 39,
+                                    ),
+                                    new Container(
+                                      width: 102,
+                                      height: 41,
+                                      child: new RaisedButton(
+                                        child: new Text(
+                                          "Não",
+                                          style: TextStyle(fontSize: 24),
+                                        ),
+                                        onPressed: () {
+                                          Navigator.of(context).pop();
+                                        },
+                                        color: Color(
+                                          0xFFA8131D,
+                                        ),
+                                        textColor: Colors.white,
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius:
+                                              BorderRadius.circular(10.0),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          );
+                        },
+                      );
+                    },
                   ),
                 )
               ],
