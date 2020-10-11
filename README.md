@@ -2,7 +2,8 @@
 
 <!--![](Thumbnail.png)-->
 
-> O aplicativo Get Club tem como objetivo promover a troca de serviços e produtos com pagamento envolvido entre empresas (B2B) de forma a fomentar o mercado e dar visibilidade a essas empresas.
+> O Get Club se trata de um clube de vantagens exclusivo para micro e pequenas empresas que utilizam as máquinas Getnet.
+
 
 ### Show some :heart: and star the repo to support the project
 
@@ -32,29 +33,30 @@
 -->
 
 
-## Usage example
+##Usage example
 
-O Get Club possui a funcionalidade primária de conectar microempreendedores individuais,
-micro e pequenas empresas para contratação de serviços ou compra de produtos de outros usuários.
-Além disso, a aplicação também é capaz de fornecer um fundo de investimentos com
-seguro para essas empresas, afim de promover seu crescimento.
+###Funcionalidades primárias
+            
+A funcionalidade principal será conectar microempreendedores individuais, 
+micro e pequenas empresas para negociações e contratação de serviços ou 
+compra de produtos de outros empreendedores cadastrados.
+            
+A conexão para negociações e contratação de serviços e/ou comércio de 
+produtos se dará através de um aplicativo mobile de acesso exclusivo a 
+clientes Getnet. 
 
-A conexão entre micro e pequenos empreendimentos para contratação de serviços e/ou
-comércio de bens se dará através de um aplicativo mobile de acesso exclusivo aos
-usuários das máquinas Getnet, em uma espécie de pacote de prestação de serviços.
-Os usuários poderão pesquisar empresas cadastradas, negociar e fechar acordos com os demais
-usuários desta cooperativa/ deste clube de vantagens.
+###Para novos clientes
 
-Já o consórcio financeiro, se trata de depósitos e/ou transferências feitas por
-empreendedores para a Getnet investir e devolver com correção. Caso necessário,
-será possível fazer retiradas para completar o pagamento de matéria prima ou pessoal adicional
-para a prestação do que foi acordado com outro usuário.
-Será possível ainda fazer a retirada em casos de imprevistos emergenciais.
-
-Ele é feito para ser usado por:
-- microempreendedores individuais;
-- micro e pequeno empreendimento;
-- empresas que já possuem .
+Haverá uma taxa de adesão de R$120,00 que poderá ser parcelada em até 12 
+vezes sem juros, incluindo neste valor uma máquina SuperGet Mobile.
+            
+Dentro da plataforma, será possível pesquisar empresas cadastradas e 
+negociar e fechar acordos com os demais usuários através de chat nativo 
+da aplicação. Os detalhes dos acordos feitos ficarão por conta dos 
+empreendedores envolvidos. Caso haja entendimento mútuo da existência de
+discrepância entre o valor dos serviços ou produtos a serem trocados, os 
+empreendedores terão a chance de efetuar o pagamento da diferença através 
+da Getnet.
 
 # Development setup
 
