@@ -143,7 +143,7 @@ class _UserInfoState extends State<UserInfo> {
                   ),
                 ),
                 new Container(
-                  width: 26,
+                  width: 12,
                 ),
                 new Container(
                   child: RaisedButton(
@@ -206,7 +206,7 @@ class _UserTipsEntrepreneurismState extends State<UserTipsEntrepreneurism> {
             onTap: () => Navigator.of(context).push(
                     new MaterialPageRoute(builder: (BuildContext context) {
                   return new Youtube_View(
-                      url: "youtu.be/ARYqzdvicQ0",
+                      url: "https://youtu.be/ARYqzdvicQ0",
                       pageName: "EMPREENDEDORISMO");
                 })),
             //_launchURL,
@@ -221,7 +221,7 @@ class _UserTipsEntrepreneurismState extends State<UserTipsEntrepreneurism> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   new Container(
-                    width: 181,
+                    width: 165,
                     height: 143,
                     child: Image(
                       image: AssetImage("assets/images/user/empreend.png"),

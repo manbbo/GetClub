@@ -145,13 +145,13 @@ class _HomeCarouselState extends State<HomeCarousel> {
             //
             ),
         Container(
-          padding: EdgeInsets.only(top: 35),
+          padding: EdgeInsets.only(top: 45),
           child: CarouselSlider(
             options: CarouselOptions(
               scrollDirection: Axis.horizontal,
               height: 200.0,
               //enlargeCenterPage: true,
-              viewportFraction: 0.7,
+              viewportFraction: 0.75,
               initialPage: 0,
             ),
             items: [0, 1, 2, 3, 4, 5].map((i) {

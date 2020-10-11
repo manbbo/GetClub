@@ -122,18 +122,12 @@ class _EntrepreneurPageState extends State<EntrepreneurPage> {
             ),
             Divider(),
             new Container(
-              width: MediaQuery
-                  .of(context)
-                  .size
-                  .width,
-              height: 90,
+              width: MediaQuery.of(context).size.width,
+              height: 110,
               child: new Column(
                 children: [
                   Container(
-                    width: MediaQuery
-                        .of(context)
-                        .size
-                        .width - 40,
+                    width: MediaQuery.of(context).size.width - 40,
                     child: Text("Descrição:"),
                   ),
                   Container(

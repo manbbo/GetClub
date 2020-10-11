@@ -22,6 +22,9 @@ class _Youtube_ViewState extends State<Youtube_View> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
+      appBar: new AppBar(
+        title: Text(widget.pageName),
+      ),
       body: WebView(
         initialUrl: widget.url,
       ),
