@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:getclub/services/youtube.dart';
 
 class UserHeader extends StatefulWidget {
   String username;
@@ -201,37 +202,45 @@ class _UserTipsEntrepreneurismState extends State<UserTipsEntrepreneurism> {
         new Container(
           height: 13,
         ),
-        new Container(
-          width: MediaQuery.of(context).size.width,
-          height: 162,
-          decoration: BoxDecoration(
-              color: Colors.white,
-              border: Border.all(color: Colors.black54),
-              borderRadius: BorderRadius.circular(10)),
-          child: new Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              new Container(
-                width: 181,
-                height: 143,
-                child: Image(
-                  image: AssetImage("assets/images/user/empreend.png"),
-                ),
+        new GestureDetector(
+            onTap: () => Navigator.of(context).push(
+                    new MaterialPageRoute(builder: (BuildContext context) {
+                  return new Youtube_View(
+                      url: "youtu.be/ARYqzdvicQ0",
+                      pageName: "EMPREENDEDORISMO");
+                })),
+            //_launchURL,
+            child: new Container(
+              width: MediaQuery.of(context).size.width,
+              height: 162,
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(color: Colors.black54),
+                  borderRadius: BorderRadius.circular(10)),
+              child: new Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  new Container(
+                    width: 181,
+                    height: 143,
+                    child: Image(
+                      image: AssetImage("assets/images/user/empreend.png"),
+                    ),
+                  ),
+                  new Container(
+                    width: 9,
+                  ),
+                  new Container(
+                    width: 135,
+                    height: 115,
+                    child: Text(
+                      "Quer ser um empreendedor de sucesso? Assista ao vídeo e descubra se você está no caminho certo no mundo do empreendedorismo. Veja também as dicas para se tornar um bom líder para os seus negócios",
+                      style: TextStyle(fontSize: 10),
+                    ),
+                  )
+                ],
               ),
-              new Container(
-                width: 9,
-              ),
-              new Container(
-                width: 135,
-                height: 115,
-                child: Text(
-                  "Quer ser um empreendedor de sucesso? Assista ao vídeo e descubra se você está no caminho certo no mundo do empreendedorismo. Veja também as dicas para se tornar um bom líder para os seus negócios",
-                  style: TextStyle(fontSize: 10),
-                ),
-              )
-            ],
-          ),
-        )
+            ))
       ],
     );
   }
