@@ -82,11 +82,21 @@ class HomeCarousel extends StatefulWidget {
 class _HomeCarouselState extends State<HomeCarousel> {
   Widget CarouselItems(String image, String label) {
     return Container(
-      child: Image(
-        image: AssetImage('assets/images/home/$image.png'),
-        semanticLabel: label,
-      ),
-    );
+        child: Stack(
+      children: [
+        Image(
+          image: AssetImage('assets/images/home/$image.png'),
+        ),
+        Container(
+          child: Text(
+            label,
+            style: TextStyle(fontSize: 17, color: Color(0xff413E3F)),
+          ),
+          alignment: Alignment.bottomLeft,
+          padding: EdgeInsets.only(bottom: 12, left: 12),
+        )
+      ],
+    ));
   }
 
   List<Widget> items;
@@ -106,18 +116,23 @@ class _HomeCarouselState extends State<HomeCarousel> {
     return new Stack(
       children: [
         Container(
-          width: 200,
+          width: MediaQuery
+              .of(context)
+              .size
+              .width,
           height: 40,
-          child: Text("Os melhores das categorias"),
+          padding: EdgeInsets.only(left: 22),
+          child: Text("Os melhores das categorias",
+            style: TextStyle(color: new Color(0xff413E3F), fontSize: 16),),
         ),
         Container(
+          padding: EdgeInsets.only(top: 35),
           child: CarouselSlider(
             options: CarouselOptions(
               scrollDirection: Axis.horizontal,
-              height: 270.0,
-              enlargeCenterPage: true,
+              height: 200.0,
+              //enlargeCenterPage: true,
               viewportFraction: 0.7,
-              aspectRatio: 2.0,
               initialPage: 0,
             ),
             items: [0, 1, 2, 3, 4, 5].map((i) {
