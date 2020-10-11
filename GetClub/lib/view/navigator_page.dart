@@ -29,10 +29,6 @@ class _NavigationState extends State<Navigation> {
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
-      appBar: AppBar(
-        centerTitle: true,
-        title: Text(titles[indexer], style: TextStyle(fontSize: 30),),
-      ),
       body: bodies[indexer],
       bottomNavigationBar: BottomNavigationBar(
         selectedItemColor: new Color(0xFFa8131d),
@@ -60,9 +56,11 @@ class _NavigationState extends State<Navigation> {
               label: titles[2]),
           BottomNavigationBarItem(
               icon: Container(
-                height: 0,
+                height: 51,
+                child:
+                    Image(image: AssetImage('assets/images/profile_pic.png')),
               ),
-              label: titles[3])
+              label: " ")
         ],
       ),
     );
