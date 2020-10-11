@@ -47,10 +47,11 @@ class _SearchBarState extends State<SearchBar> {
     return new Column(
       children: [
         new Container(
-          child: new TextFormField(
+          child: new TextField(
             controller: widget.search,
-            decoration: InputDecoration(suffixIcon: Icon(Icons.search)),
-            onFieldSubmitted: _handleSubmitted,
+            decoration: InputDecoration(
+                suffixIcon: Icon(Icons.search),
+                hintText: "Procure o que precisa!"),
             onChanged: _handleEditted,
           ),
         ),
@@ -89,32 +90,8 @@ class _SearchListState extends State<SearchList> {
 
   @override
   Widget build(BuildContext context) {
-    if (!widget.searchBar.startSearching) {
-      return new Container(
-        child: Text("Procure o que precisa!"),
-      );
-    } else {
-      if (widget.listItems != null) {
-        if (widget.listItems.isEmpty) {
-          return new Container(
-            child: Text("Não há nada com esses termos"),
-          );
-        } else {
-          return new ListView.separated(
-            itemBuilder: (BuildContext context, int index) {
-              return widget.listItems[index];
-            },
-            itemCount: widget.listItems.length,
-            padding: EdgeInsets.all(5),
-            separatorBuilder: (BuildContext context, int index) =>
-                const Divider(),
-          );
-        }
-      } else {
-        return new Container(
-          child: Text("Não há nada com esses termos"),
-        );
-      }
-    }
+    return new Container(
+      child: Text(""),
+    );
   }
 }

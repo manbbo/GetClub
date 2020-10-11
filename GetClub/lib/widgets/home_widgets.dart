@@ -121,15 +121,29 @@ class _HomeCarouselState extends State<HomeCarousel> {
     return new Stack(
       children: [
         Container(
-          width: MediaQuery
-              .of(context)
-              .size
-              .width,
-          height: 40,
-          padding: EdgeInsets.only(left: 22),
-          child: Text("Os melhores das categorias",
-            style: TextStyle(color: new Color(0xff413E3F), fontSize: 20),),
-        ),
+            width: MediaQuery.of(context).size.width,
+            height: 40,
+            padding: EdgeInsets.only(left: 22),
+            child: new Row(
+              children: [
+                Container(
+                  width: 13,
+                  height: 13,
+                  child: Image(
+                    image: AssetImage("assets/images/bola.png"),
+                  ),
+                ),
+                Container(
+                  width: 10,
+                ),
+                Text(
+                  "Os melhores das categorias",
+                  style: TextStyle(color: new Color(0xff413E3F), fontSize: 20),
+                ),
+              ],
+            )
+            //
+            ),
         Container(
           padding: EdgeInsets.only(top: 35),
           child: CarouselSlider(
@@ -155,6 +169,14 @@ class _HomeCarouselState extends State<HomeCarousel> {
 }
 
 class HomeProfessionals extends StatefulWidget {
+  String thumbnail;
+  List<String> name = new List(2),
+      image = new List(2);
+
+  HomeProfessionals({this.thumbnail = "Empreendedores na sua região",
+    this.name = const ["Adriana Serviços de Tecnologia", 'Personal Home'],
+    this.image = const ["avatar1", "avatar2"]});
+
   @override
   _HomeProfessionalsState createState() => _HomeProfessionalsState();
 }
@@ -178,7 +200,7 @@ class _HomeProfessionalsState extends State<HomeProfessionals> {
         height: 67,
         padding: EdgeInsets.all(10),
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(20),
+            borderRadius: BorderRadius.circular(10),
             color: Colors.white,
             border: Border.all(color: Colors.black54)
         ),
@@ -229,18 +251,27 @@ class _HomeProfessionalsState extends State<HomeProfessionals> {
       child: new Column(
         children: [
           new Container(
-            width: MediaQuery
-                .of(context)
-                .size
-                .width,
-            padding: EdgeInsets.only(left: 22),
-            child: Text(
-              "Empreendedores na sua região", style: TextStyle(fontSize: 20),),
+              width: MediaQuery
+                  .of(context)
+                  .size
+                  .width,
+              padding: EdgeInsets.only(left: 22),
+              child: Row(
+                children: [
+                  Container(width: 13, height: 13,
+                    child: Image(image: AssetImage("assets/images/bola.png"),),
+                  ),
+                  Container(width: 10,),
+                  Text(widget.thumbnail, style: TextStyle(fontSize: 20),),
+                ],
+              )
+
+            //
           ),
           Container(height: 30,),
-          botao("avatar1", "Adriana Serviços de Tecnologia"),
+          botao(widget.image[0], widget.name[0]),
           Container(height: 22,),
-          botao("avatar2", "Personal Home"),
+          botao(widget.image[1], widget.name[1]),
         ],
       ),
     );

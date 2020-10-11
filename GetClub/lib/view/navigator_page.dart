@@ -10,15 +10,15 @@ class Navigation extends StatefulWidget {
 }
 
 class _NavigationState extends State<Navigation> {
-  List<String> titles = ["HOME", "BUSCAR", "CHAT", "PERFIL"];
+  List<String> titles = ["HOME", "BUSCAR", "MENSAGENS", "PERFIL"];
   List<Widget> bodies = [
+    new User_Page(),
     new Home_Page(),
     new Search_Page(),
-    new Chat_Page(),
-    new User_Page()
+    new Chat_Page()
   ];
 
-  int indexer = 0;
+  int indexer = 1;
 
   void _selectIndex(int i) {
     setState(() {
@@ -41,6 +41,13 @@ class _NavigationState extends State<Navigation> {
         items: [
           BottomNavigationBarItem(
               icon: Container(
+                height: 51,
+                child:
+                    Image(image: AssetImage('assets/images/profile_pic.png')),
+              ),
+              label: " "),
+          BottomNavigationBarItem(
+              icon: Container(
                 height: 0,
               ),
               label: titles[0]),
@@ -54,13 +61,7 @@ class _NavigationState extends State<Navigation> {
                 height: 0,
               ),
               label: titles[2]),
-          BottomNavigationBarItem(
-              icon: Container(
-                height: 51,
-                child:
-                    Image(image: AssetImage('assets/images/profile_pic.png')),
-              ),
-              label: " ")
+
         ],
       ),
     );

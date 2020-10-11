@@ -5,7 +5,7 @@ import 'package:getclub/widgets/focus.dart';
 // ignore: must_be_immutable
 class LoginContainer extends StatefulWidget {
   TextEditingController username =
-  new TextEditingController(text: "paulo.silva@getclub.com"),
+          new TextEditingController(text: "jonassantos@email.com"),
       password = new TextEditingController(text: "thisisapassword");
 
   GlobalKey user = new GlobalKey(),
@@ -50,21 +50,23 @@ class _LoginContainerState extends State<LoginContainer> {
             height: 50,
           ),
           EnsureVisibleWhenFocused(
-              child: TextField(
+              child: TextFormField(
                 //key: widget.user,
                 decoration:
-                    InputDecoration(hintText: "Coloque seu Usuário aqui"),
+                InputDecoration(hintText: "Usuário"),
                 controller: widget.username,
                 focusNode: focusUser,
+                style: TextStyle(color: Colors.white),
               ),
               focusNode: focusUser),
           EnsureVisibleWhenFocused(
-            child: TextField(
+            child: TextFormField(
               //key: widget.pass,
-              decoration: InputDecoration(hintText: "Coloque sua Senha aqui"),
+              decoration: InputDecoration(hintText: "Senha"),
               controller: widget.password,
               obscureText: true,
               focusNode: focusPassword,
+              style: TextStyle(color: Colors.white),
             ),
             focusNode: focusPassword,
           ),
@@ -76,7 +78,7 @@ class _LoginContainerState extends State<LoginContainer> {
                 Navigator.pushReplacementNamed(context, '/first');
               },
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20)),
+                  borderRadius: BorderRadius.circular(10)),
               child: Text(
                 "LOGIN",
                 style: TextStyle(color: new Color(0xFFa8131d), fontSize: 24),

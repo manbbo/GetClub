@@ -59,7 +59,7 @@ class _Login_PageState extends State<Login_Page> {
             child: LoginContainer(),
             decoration: BoxDecoration(
                 //color: new Color(0xFFA8131D),
-                borderRadius: BorderRadius.circular(20)),
+                borderRadius: BorderRadius.circular(10)),
           ))
         ],
       ),
