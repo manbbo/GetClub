@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:getclub/services/deeplink.dart';
 import 'package:getclub/widgets/payment_widget.dart';
 
 // 5155901222280001 cartao teste credito
@@ -12,8 +13,10 @@ class PaymentsPage extends StatefulWidget {
 }
 
 class _PaymentsPageState extends State<PaymentsPage> {
+  DeepLinkBloc _bloc = DeepLinkBloc();
+
   @override
   Widget build(BuildContext context) {
-    return new PaymentWidget();
+    return new PaymentStreamBuilder();
   }
 }

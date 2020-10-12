@@ -103,10 +103,29 @@ class _LoginContainerState extends State<LoginContainer> {
               color: Colors.white,
             ),
           ),
-          GestureDetector(
-            child: Text(
-              "Esqueci minha senha",
-              style: TextStyle(fontSize: 12, color: new Color(0xffE5E5E5)),
+          new Container(
+            width: MediaQuery.of(context).size.width,
+            child: new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                GestureDetector(
+                  child: Text(
+                    "Esqueci minha senha",
+                    style:
+                        TextStyle(fontSize: 12, color: new Color(0xffE5E5E5)),
+                  ),
+                ),
+                new Container(
+                  width: 76,
+                ),
+                GestureDetector(
+                  child: Text(
+                    "Quero participar",
+                    style:
+                        TextStyle(fontSize: 12, color: new Color(0xffE5E5E5)),
+                  ),
+                )
+              ],
             ),
           )
         ],

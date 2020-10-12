@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:getclub/view/payments.dart';
 import 'package:getclub/widgets/home_widgets.dart';
 
 class EntrepreneurPage extends StatefulWidget {
@@ -145,16 +146,16 @@ class _EntrepreneurPageState extends State<EntrepreneurPage> {
               height: 36,
             ),
             new Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 new Container(
-                  width: 180,
                   height: 41,
                   child: RaisedButton(
                     child: Text(
                       "Faça sua proposta",
                     ),
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
+                        borderRadius: BorderRadius.circular(10.0),
                         side: BorderSide(
                             color: Color(
                           0xFFa8131d,
@@ -165,21 +166,25 @@ class _EntrepreneurPageState extends State<EntrepreneurPage> {
                   ),
                 ),
                 new Container(
-                  width: 180,
+                  width: 26,
+                ),
+                new Container(
                   height: 41,
-                  child: FlatButton(
-                    child: Text(
-                      "Realizar pagamento",
+                  child: new FlatButton(
+                    onPressed: () {
+                      Navigator.of(context).push(
+                          MaterialPageRoute(builder: (BuildContext context) {
+                        return new PaymentsPage();
+                      }));
+                    },
+                    child: Text("Realizar pagamento"),
+                    color: Color(
+                      0xFFA8131D,
                     ),
+                    textColor: Colors.white,
                     shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                        side: BorderSide(
-                            color: Color(
-                          0xFFa8131d,
-                        ))),
-                    textColor: Color(0xFFa8131d),
-                    color: Colors.white,
-                    onPressed: () {},
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
                   ),
                 ),
               ],

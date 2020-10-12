@@ -128,24 +128,6 @@ class _UserInfoState extends State<UserInfo> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 new Container(
-                  width: 190,
-                  height: 41,
-                  child: new FlatButton(
-                    onPressed: () {},
-                    child: Text("Salvar Informações"),
-                    color: Color(
-                      0xFFA8131D,
-                    ),
-                    textColor: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                  ),
-                ),
-                new Container(
-                  width: 12,
-                ),
-                new Container(
                   child: RaisedButton(
                     child: Text(
                       "Excluir Conta",
@@ -236,7 +218,25 @@ class _UserInfoState extends State<UserInfo> {
                       );
                     },
                   ),
-                )
+                ),
+                new Container(
+                  width: 12,
+                ),
+                new Container(
+                  width: 190,
+                  height: 41,
+                  child: new FlatButton(
+                    onPressed: () {},
+                    child: Text("Salvar Informações"),
+                    color: Color(
+                      0xFFA8131D,
+                    ),
+                    textColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                  ),
+                ),
               ],
             ),
           )
@@ -255,69 +255,268 @@ class UserTipsEntrepreneurism extends StatefulWidget {
 class _UserTipsEntrepreneurismState extends State<UserTipsEntrepreneurism> {
   @override
   Widget build(BuildContext context) {
-    return new Column(
-      children: [
-        Row(
+    return new Scaffold(
+      body: new Container(
+        padding: EdgeInsets.only(top: 30),
+        child: new Column(
           children: [
-            Container(
-              width: 13,
-              height: 13,
-              child: Image(
-                image: AssetImage("assets/images/bola.png"),
-              ),
-            ),
-            Container(
-              width: 10,
-            ),
-            Text(
-              "Dicas de empreendedorismo",
-              style: TextStyle(fontSize: 20),
-            ),
-          ],
-        ),
-        new Container(
-          height: 13,
-        ),
-        new GestureDetector(
-            onTap: () => Navigator.of(context).push(
-                    new MaterialPageRoute(builder: (BuildContext context) {
-                  return new Youtube_View(
-                      url: "https://youtu.be/ARYqzdvicQ0",
-                      pageName: "EMPREENDEDORISMO");
-                })),
-            //_launchURL,
-            child: new Container(
-              width: MediaQuery.of(context).size.width,
-              height: 162,
-              decoration: BoxDecoration(
-                  color: Colors.white,
-                  border: Border.all(color: Colors.black54),
-                  borderRadius: BorderRadius.circular(10)),
+            new Container(
+              width: MediaQuery
+                  .of(context)
+                  .size
+                  .width,
+              height: 40,
+              alignment: Alignment.topCenter,
               child: new Row(
-                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  new Container(
-                    width: 165,
-                    height: 143,
-                    child: Image(
-                      image: AssetImage("assets/images/user/empreend.png"),
-                    ),
-                  ),
-                  new Container(
-                    width: 9,
-                  ),
-                  new Container(
-                    width: 135,
-                    height: 115,
-                    child: Text(
-                      "Quer ser um empreendedor de sucesso? Assista ao vídeo e descubra se você está no caminho certo no mundo do empreendedorismo. Veja também as dicas para se tornar um bom líder para os seus negócios",
-                      style: TextStyle(fontSize: 10),
-                    ),
+                  IconButton(
+                    icon: Icon(Icons.arrow_back_ios),
+                    onPressed: () => Navigator.pop(context),
                   )
                 ],
               ),
-            ))
-      ],
+            ),
+            Container(
+              alignment: Alignment.center,
+              width: MediaQuery
+                  .of(context)
+                  .size
+                  .width,
+              child: Text("Faça negócios com"),
+            ),
+            new Container(height: 10,),
+            new Container(
+              width: MediaQuery
+                  .of(context)
+                  .size
+                  .width - 40,
+              child: new Column(
+                children: [
+                  Row(
+                    children: [
+                      Container(
+                        width: 13,
+                        height: 13,
+                        child: Image(
+                          image: AssetImage("assets/images/bola.png"),
+                        ),
+                      ),
+                      Container(
+                        width: 10,
+                      ),
+                      new Container(
+                        width: 316, height: 54,
+                        child: Text(
+                          "Em nossa parceria com Sebrae personalizamos os melhores vídeos para você se tornar um empreendedor de sucesso!",
+                          style: TextStyle(fontSize: 13,),
+                          softWrap: true,
+                        ),
+                      )
+                    ],
+                  ),
+                  new Container(
+                    height: 13,
+                  ),
+                  new GestureDetector(
+                      onTap: () =>
+                          Navigator.of(context).push(
+                              new MaterialPageRoute(
+                                  builder: (BuildContext context) {
+                                    return new Youtube_View(
+                                        url: "https://youtu.be/ARYqzdvicQ0",
+                                        pageName: "EMPREENDEDORISMO");
+                                  })),
+                      //_launchURL,
+                      child: new Container(
+                        width: MediaQuery
+                            .of(context)
+                            .size
+                            .width,
+                        height: 162,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            new Container(
+                              width: 165,
+                              height: 143,
+                              child: Image(
+                                image: AssetImage(
+                                    "assets/images/user/empreend.png"),
+                              ),
+                            ),
+                            new Container(
+                              width: 9,
+                            ),
+                            new Container(
+                              width: 135,
+                              height: 115,
+                              child: Text(
+                                "Quer ser um empreendedor de sucesso? Assista ao vídeo e descubra se você está no caminho certo no mundo do empreendedorismo. Veja também as dicas para se tornar um bom líder para os seus negócios",
+                                style: TextStyle(fontSize: 10),
+                              ),
+                            )
+                          ],
+                        ),
+                      )),
+                  new Container(height: 26,),
+                  new GestureDetector(
+                      onTap: () =>
+                          Navigator.of(context).push(
+                              new MaterialPageRoute(
+                                  builder: (BuildContext context) {
+                                    return new Youtube_View(
+                                        url: "https://www.youtube.com/watch?v=eXr_IKiAa2w&ab_channel=Sebrae",
+                                        pageName: "EMPREENDEDORISMO");
+                                  })),
+                      //_launchURL,
+                      child: new Container(
+                        width: MediaQuery
+                            .of(context)
+                            .size
+                            .width,
+                        height: 162,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            new Container(
+                              width: 165,
+                              height: 143,
+                              child: Image(
+                                image: AssetImage(
+                                    "assets/images/user/dicas.png"),
+                              ),
+                            ),
+                            new Container(
+                              width: 9,
+                            ),
+                            new Container(
+                              width: 135,
+                              height: 115,
+                              child: Text(
+                                "As LIVES invadiram a internet e estão ajudando muitas empresas a se aproximarem dos seus clientes. Uma das principais plataformas é o Instagram, por isso o Sebrae preparou esse vídeo com dicas sobre como usar.",
+                                style: TextStyle(fontSize: 10),
+                              ),
+                            )
+                          ],
+                        ),
+                      )),
+                  new Container(height: 26,),
+                  new GestureDetector(
+                      onTap: () =>
+                          Navigator.of(context).push(
+                              new MaterialPageRoute(
+                                  builder: (BuildContext context) {
+                                    return new Youtube_View(
+                                        url: "https://youtu.be/Fh_3pwqXqzg",
+                                        pageName: "EMPREENDEDORISMO");
+                                  })),
+                      //_launchURL,
+                      child: new Container(
+                        width: MediaQuery
+                            .of(context)
+                            .size
+                            .width,
+                        height: 162,
+                        decoration: BoxDecoration(
+                            color: Colors.white,
+                            border: Border.all(color: Colors.black54),
+                            borderRadius: BorderRadius.circular(10)),
+                        child: new Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            new Container(
+                              width: 165,
+                              height: 143,
+                              child: Image(
+                                image: AssetImage(
+                                    "assets/images/user/coronga.png"),
+                              ),
+                            ),
+                            new Container(
+                              width: 9,
+                            ),
+                            new Container(
+                              width: 135,
+                              height: 115,
+                              child: Text(
+                                "Este vídeo faz parte de uma série de conteúdos dedicados a quem está na luta diária para manter sua empresa funcionando. Esperamos assim ajudá-lo(a) a minimizar os efeitos da crise provocada pelo Coronavírus.",
+                                style: TextStyle(fontSize: 10),
+                              ),
+                            )
+                          ],
+                        ),
+                      ))
+                ],
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
+}
+
+class UserGetToEntrepreneurism extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return new Container(
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: Colors.grey)
+      ),
+      width: 341,
+      height: 142,
+      alignment: Alignment.center,
+      child: new Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          new Container(
+            width: 151, height: 114,
+            child: Image(image: AssetImage("assets/images/user/people.png"),),
+          ),
+          new Container(width: 17,),
+          new Container(
+            width: 147,
+            child: new Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  "Quer ser um empreendedor de sucesso? Confira uma jornada personalizada para o  seu empreendimento",
+                  style: TextStyle(fontSize: 10), softWrap: true,),
+                new Container(height: 14,),
+                new Container(
+                  width: 134, height: 41,
+                  child: new FlatButton(
+                    onPressed: () {
+                      Navigator.of(context).push(new MaterialPageRoute(
+                          builder: (BuildContext context) {
+                            return new UserTipsEntrepreneurism();
+                          }));
+                    },
+                    child: Text("Veja mais"),
+                    color: Color(
+                      0xFFA8131D,
+                    ),
+                    textColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10.0),
+                    ),
+                  ),
+                )
+              ],
+            ),
+          )
+        ],
+      ),
+    );
+  }
+
 }

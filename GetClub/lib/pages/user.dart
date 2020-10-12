@@ -30,7 +30,7 @@ class _User_PageState extends State<User_Page> {
             ),
             Container(
               padding: EdgeInsets.all(20),
-              child: UserTipsEntrepreneurism(),
+              child: UserGetToEntrepreneurism(),
             ),
           ],
         ),

@@ -43,7 +43,8 @@
                 <category android:name="android.intent.category.BROWSABLE" />
 
                 <data
-                    android:host="pagamento/v1/"
+                    android:host="pagamento"
+                    android:pathPrefix="/v1/payment"
                     android:scheme="getnet" />
             </intent-filter>
         </activity>
