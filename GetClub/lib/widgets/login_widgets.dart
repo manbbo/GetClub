@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:getclub/widgets/focus.dart';
+import 'package:web_socket_channel/status.dart' as status;
+import 'package:web_socket_channel/web_socket_channel.dart';
 
 // ignore: must_be_immutable
 class LoginContainer extends StatefulWidget {
@@ -76,6 +78,21 @@ class _LoginContainerState extends State<LoginContainer> {
             child: RaisedButton(
               onPressed: () {
                 Navigator.pushReplacementNamed(context, '/first');
+                createAndLog() async {
+                  var userChannel = WebSocketChannel.connect(
+                      Uri.parse("http://localhost:3333/user"));
+                  userChannel.sink.add(
+                      '"name": "Jonas Santos",'
+                          '"email": "jonassantos@email.com",'
+                          '"password":"thisisapassword"'
+                  );
+
+                  userChannel.stream.listen((message) {
+                    userChannel.sink.close(status.goingAway);
+                  });
+                }
+
+                createAndLog();
               },
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(10)),

@@ -135,9 +135,7 @@ class _EntrepreneurPageState extends State<EntrepreneurPage> {
                   ),
                   Container(
                     width: MediaQuery
-                        .of(context)
-                        .size
-                        .width - 40,
+                        .of(context).size.width - 40,
                     child: Text(widget.description),
                   )
                 ],
@@ -146,23 +144,51 @@ class _EntrepreneurPageState extends State<EntrepreneurPage> {
             Container(
               height: 36,
             ),
-            new Container(
-              width: 180,
-              height: 41,
-              child: RaisedButton(
-                child: Text("Enviar Mensagem",),
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(18.0),
-                    side: BorderSide(color: Color(0xFFa8131d,))
+            new Row(
+              children: [
+                new Container(
+                  width: 180,
+                  height: 41,
+                  child: RaisedButton(
+                    child: Text(
+                      "Faça sua proposta",
+                    ),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(
+                            color: Color(
+                          0xFFa8131d,
+                        ))),
+                    textColor: Color(0xFFa8131d),
+                    color: Colors.white,
+                    onPressed: () {},
+                  ),
                 ),
-                textColor: Color(0xFFa8131d),
-                color: Colors.white,
-                onPressed: () {},
-              ),
-            ), Container(
+                new Container(
+                  width: 180,
+                  height: 41,
+                  child: FlatButton(
+                    child: Text(
+                      "Realizar pagamento",
+                    ),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(18.0),
+                        side: BorderSide(
+                            color: Color(
+                          0xFFa8131d,
+                        ))),
+                    textColor: Color(0xFFa8131d),
+                    color: Colors.white,
+                    onPressed: () {},
+                  ),
+                ),
+              ],
+            ),
+            Container(
               height: 44,
             ),
-            HomeProfessionals(thumbnail: "Avaliação do Negócio",
+            HomeProfessionals(
+              thumbnail: "Avaliação do Negócio",
               name: const [
                 "Negício excelente. Muito bom",
                 'Otima empresa! Escolha certa!!!'
