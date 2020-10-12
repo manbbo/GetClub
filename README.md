@@ -2,7 +2,7 @@
 
 <!--![](Thumbnail.png)-->
 
-> O Get Club se trata de um clube de vantagens exclusivo para micro e pequenas empresas que utilizam as máquinas Getnet.
+> O Get Club se trata de um clube de vantagens exclusivo para micro e pequenas empresas que desejam alavancar suas vendas aos setores empresariais.
 
 
 ### Show some :heart: and star the repo to support the project
@@ -58,6 +58,7 @@ discrepância entre o valor dos serviços ou produtos a serem trocados, os
 empreendedores terão a chance de efetuar o pagamento da diferença através 
 da Getnet.
 
+
 # Development setup
 
 ## Flutter Environment
@@ -106,6 +107,17 @@ and then you're going to be able to do
 ```sh
 flutter run
 ```
+
+## ApiGetClub
+
+## Instalation
+
+1. Download [Node]() and [Yarn]()
+2. Open the terminal inside the project's folder and type 'yarn' to add all remaining files and folters
+3. Create a file into project's root called .env and paste the content from the file .env.example
+4. Put the connection string into DB variable from .env
+5. To start the app, open the terminal and type yarn start
+
 
 ## Release History
 
