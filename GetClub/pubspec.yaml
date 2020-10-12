@@ -21,6 +21,11 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  uni_links: ^0.4.0
+  provider: ^4.3.2+2
+  web_socket_channel: ^1.1.0
+  webview_flutter: ^1.0.1
+  carousel_slider: ^2.3.1
   flutter:
     sdk: flutter
 
@@ -44,6 +49,9 @@ flutter:
   assets:
     - assets/images/
     - assets/images/logo/
+    - assets/images/login/
+    - assets/images/home/
+    - assets/images/user/
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.

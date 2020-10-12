@@ -2,7 +2,8 @@
 
 <!--![](Thumbnail.png)-->
 
-> O aplicativo Get Club tem como objetivo promover a troca de serviços e produtos com pagamento envolvido entre empresas (B2B) e prover consórcios de forma a fomentar o mercado e dar visibilidade a essas empresas.
+> O Get Club se trata de um clube de vantagens exclusivo para micro e pequenas empresas que desejam alavancar suas vendas aos setores empresariais.
+
 
 ### Show some :heart: and star the repo to support the project
 
@@ -10,52 +11,59 @@
 [![GitHub forks](https://img.shields.io/github/forks/manbbo/GetClub.svg?style=social&label=Fork)](https://github.com/manbbo/GetClub/fork)
 [![GitHub watchers](https://img.shields.io/github/watchers/manbbo/GetClub.svg?style=social&label=Watch)](https://github.com/manbbo/GetClub)
 [![GitHub followers](https://img.shields.io/github/followers/manbbo.svg?style=social&label=Follow)](https://github.com/manbbo)
-<!--
-### Some Screenshots
 
-- Boot and First Screen
+### Screenshots
 
-  <img src="https://i.imgur.com/11bokqL.jpg"  height="400em"/>
-    <img src="https://i.imgur.com/oFBCTtv.jpg"  height="400em"/>
+- First Screen
+
+  <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/login.png"  height="400em"/>
 
 - HomePage
 
-    <img src="https://i.imgur.com/tlCEZt8.jpg" height="400em"/>
-    <img src="https://i.imgur.com/FJpyKtU.jpg"  height="400em"/>
-    <img src="https://i.imgur.com/cElMpFJ.jpg"  height="400em"/>
-      <img src="https://i.imgur.com/6SCPoDA.jpg" height="400em" />
-      <img src="https://i.imgur.com/epN6dFn.jpg" height="400em"/>
+    <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/home.png" height="400em"/>
+  
+- Payment
+
+    <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/entrepreneur1.png"  height="400em"/>
+    <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/entrepreneur2.png"  height="400em"/>
+
+- Profile
+
+      <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/profile.png" height="400em" />
+      <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/journey.png" height="400em"/>
+      <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/deleteacc.png" height="400em"/>
 
 - Help Button / Sponsorship Button
 
 <img src="https://i.imgur.com/U71xuWZ.jpg" height="400em" /> <img src="https://i.imgur.com/kCfeecW.jpg" height="400em" /> <img src="https://i.imgur.com/u5QDRKO.jpg" height="400em" /><img src="https://i.imgur.com/7DJsu3S.jpg" height="400em" /><img src="https://i.imgur.com/OhsTcFF.jpg" height="400em"  /><img src="https://i.imgur.com/ZFDvtMP.jpg" height="400em" />
--->
 
 
-## Usage example
 
-O Get Club possui a funcionalidade primária de conectar microempreendedores individuais,
-micro e pequenas empresas para contratação de serviços ou compra de produtos de outros usuários.
-Além disso, a aplicação também é capaz de fornecer um fundo de investimentos com
-seguro para essas empresas, afim de promover seu crescimento.
+##Usage example
 
-A conexão entre micro e pequenos empreendimentos para contratação de serviços e/ou
-comércio de bens se dará através de um aplicativo mobile de acesso exclusivo aos
-usuários das máquinas Getnet, em uma espécie de pacote de prestação de serviços.
-Os usuários poderão pesquisar empresas cadastradas, negociar e fechar acordos com os demais
-usuários desta cooperativa/ deste clube de vantagens.
+###Funcionalidades primárias
+            
+A funcionalidade principal será conectar microempreendedores individuais, 
+micro e pequenas empresas para negociações e contratação de serviços ou 
+compra de produtos de outros empreendedores cadastrados.
+            
+A conexão para negociações e contratação de serviços e/ou comércio de 
+produtos se dará através de um aplicativo mobile de acesso exclusivo a 
+clientes Getnet. 
 
-Já o consórcio financeiro, se trata de depósitos e/ou transferências feitas por
-empreendedores para a Getnet investir e devolver com correção. Caso necessário,
-será possível fazer retiradas para completar o pagamento de matéria prima ou pessoal adicional
-para a prestação do que foi acordado com outro usuário.
-Será possível ainda fazer a retirada em casos de imprevistos emergenciais.
+###Para novos clientes
 
-Ele é feito para ser usado por:
-- microempreendedores individuais;
-- micro e pequeno empreendimento;
-- o empreendimento que busca serviços ou produtos para seu negócio (B2B);
-- o empreendimento que fornece serviços ou produtos para outros negócios (B2B).
+Haverá uma taxa de adesão de R$120,00 que poderá ser parcelada em até 12 
+vezes sem juros, incluindo neste valor uma máquina SuperGet Mobile.
+            
+Dentro da plataforma, será possível pesquisar empresas cadastradas e 
+negociar e fechar acordos com os demais usuários através de chat nativo 
+da aplicação. Os detalhes dos acordos feitos ficarão por conta dos 
+empreendedores envolvidos. Caso haja entendimento mútuo da existência de
+discrepância entre o valor dos serviços ou produtos a serem trocados, os 
+empreendedores terão a chance de efetuar o pagamento da diferença através 
+da Getnet.
+
 
 # Development setup
 
@@ -106,6 +114,17 @@ and then you're going to be able to do
 flutter run
 ```
 
+## ApiGetClub
+
+## Instalation
+
+1. Download [Node]() and [Yarn]()
+2. Open the terminal inside the project's folder and type 'yarn' to add all remaining files and folters
+3. Create a file into project's root called .env and paste the content from the file .env.example
+4. Put the connection string into DB variable from .env
+5. To start the app, open the terminal and type yarn start
+
+
 ## Release History
 
 * 0.0.1
@@ -119,7 +138,7 @@ flutter run
 
 [Lucas G Silva](https://github.com/LucasGSilva21) ([Linkedin](https://www.linkedin.com/in/lucas-gabriel-30aab4183/))
 
-Alexandrite ([Linkedin](https://www.linkedin.com/in/alexandrite-oliveira-55b79b198))
+[Alexandrite](https://www.linkedin.com/in/alexandrite-oliveira-55b79b198))
 
 [Priscylla Boente](https://www.linkedin.com/in/priscyllaboente/)
 

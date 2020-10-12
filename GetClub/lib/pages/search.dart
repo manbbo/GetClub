@@ -13,8 +13,11 @@ class _Search_PageState extends State<Search_Page> {
 
   @override
   Widget build(BuildContext context) {
-    return new Stack(
-      children: [SearchWidget()],
+    return new Container(
+      padding: EdgeInsets.only(top: 30),
+      child: new Stack(
+        children: [SearchWidget()],
+      ),
     );
   }
 }
