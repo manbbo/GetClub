@@ -36,32 +36,34 @@ class _Login_PageState extends State<Login_Page> {
     GlobalKey positioned = GlobalKey();
 
     return new Scaffold(
-        body: new Container(
-      width: MediaQuery.of(context).size.width,
-      height: MediaQuery.of(context).size.height,
-      decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage('assets/images/bkglogin.png'),
-              fit: BoxFit.cover)),
-      child: Stack(
-        alignment: Alignment.center,
-        children: [
-          new Container(
-            padding: EdgeInsets.only(top: 127),
-            width: 291,
-            alignment: Alignment.topCenter,
-            child: Image(image: AssetImage('assets/images/logo/getclub.png')),
-          ),
-          new Container(
-              child: new Container(
-            padding: EdgeInsets.only(left: 20, right: 20),
-            width: MediaQuery.of(context).size.width - 40,
-            child: LoginContainer(),
-            decoration: BoxDecoration(
-                //color: new Color(0xFFA8131D),
-                borderRadius: BorderRadius.circular(10)),
-          ))
-        ],
+        body: new SingleChildScrollView(
+      child: new Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height,
+        decoration: BoxDecoration(
+            image: DecorationImage(
+                image: AssetImage('assets/images/bkglogin.png'),
+                fit: BoxFit.cover)),
+        child: Stack(
+          alignment: Alignment.center,
+          children: [
+            new Container(
+              padding: EdgeInsets.only(top: 127),
+              width: 291,
+              alignment: Alignment.topCenter,
+              child: Image(image: AssetImage('assets/images/logo/getclub.png')),
+            ),
+            new Container(
+                child: new Container(
+              padding: EdgeInsets.only(left: 20, right: 20),
+              width: MediaQuery.of(context).size.width - 40,
+              child: LoginContainer(),
+              decoration: BoxDecoration(
+                  //color: new Color(0xFFA8131D),
+                  borderRadius: BorderRadius.circular(10)),
+            ))
+          ],
+        ),
       ),
     ));
   }
