@@ -34,9 +34,9 @@
   <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/deleteacc.png" height="400em"/>
 
 
-##Usage example
+## Usage example
 
-###Funcionalidades primárias
+### Funcionalidades primárias
             
 A funcionalidade principal será conectar microempreendedores individuais, 
 micro e pequenas empresas para negociações e contratação de serviços ou 
@@ -46,7 +46,7 @@ A conexão para negociações e contratação de serviços e/ou comércio de
 produtos se dará através de um aplicativo mobile de acesso exclusivo a 
 clientes Getnet. 
 
-###Para novos clientes
+### Para novos clientes
 
 Haverá uma taxa de adesão de R$120,00 que poderá ser parcelada em até 12 
 vezes sem juros, incluindo neste valor uma máquina SuperGet Mobile.
