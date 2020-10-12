@@ -38,13 +38,11 @@
 
 ### Funcionalidades primárias
             
-A funcionalidade principal será conectar microempreendedores individuais, 
-micro e pequenas empresas para negociações e contratação de serviços ou 
-compra de produtos de outros empreendedores cadastrados.
-            
-A conexão para negociações e contratação de serviços e/ou comércio de 
-produtos se dará através de um aplicativo mobile de acesso exclusivo a 
-clientes Getnet. 
+A funcionalidade principal será conectar microempreendedores individuais, micro e pequenas empresas para negociações e contratação de serviços ou compra de produtos de outros empreendedores cadastrados.
+
+A conexão para negociações e contratação de serviços e/ou comércio de produtos se dará através de um aplicativo mobile exclusivo para assinantes, que permitirá buscar por categorias ou diretamente por empresas de determinada área.
+
+Dentro da plataforma, será possível pesquisar empresas cadastradas e negociar e fechar acordos com os demais usuários através de chat nativo da aplicação. Ao fechar negócio, os empreendedores efetuarão o pagamento no app, através da Getnet.
 
 ### Para novos clientes
 
