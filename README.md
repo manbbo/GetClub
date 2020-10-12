@@ -2,7 +2,7 @@
 
 <!--![](Thumbnail.png)-->
 
-> O Get Club se trata de um clube de vantagens exclusivo para micro e pequenas empresas que desejam alavancar suas vendas aos setores empresariais.
+> O Get Club se trata de uma plataforma exclusiva que conecta diretamente prestadores de serviços e fornecedores ao cliente empresarial da região de atuação.
 
 
 ### Show some :heart: and star the repo to support the project
@@ -48,8 +48,7 @@ clientes Getnet.
 
 ### Para novos clientes
 
-Haverá uma taxa de adesão de R$120,00 que poderá ser parcelada em até 12 
-vezes sem juros, incluindo neste valor uma máquina SuperGet Mobile.
+O método de monetização será através de cobrança de taxa mensal de R$16,90 ou taxa anual de R$149,90 para acesso e uso da plataforma, além de taxa de 2,5% por transação efetuada.
             
 Dentro da plataforma, será possível pesquisar empresas cadastradas e 
 negociar e fechar acordos com os demais usuários através de chat nativo 
