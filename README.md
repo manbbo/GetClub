@@ -110,6 +110,8 @@ flutter run
 
 ## ApiGetClub
 
+The other repo with all the history commits can be found [here!](https://github.com/LucasGSilva21/ApiGetClub)
+
 ## Instalation
 
 1. Download [Node]() and [Yarn]()

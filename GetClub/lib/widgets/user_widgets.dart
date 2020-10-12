@@ -305,11 +305,12 @@ class _UserTipsEntrepreneurismState extends State<UserTipsEntrepreneurism> {
                         width: 10,
                       ),
                       new Container(
-                        width: 316, height: 54,
+                        width: MediaQuery.of(context).size.width-80, height: 54,
                         child: Text(
                           "Em nossa parceria com Sebrae personalizamos os melhores vídeos para você se tornar um empreendedor de sucesso!",
                           style: TextStyle(fontSize: 13,),
                           softWrap: true,
+                          textAlign: TextAlign.justify,
                         ),
                       )
                     ],
