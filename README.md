@@ -132,7 +132,7 @@ The other repo with all the history commits can be found [here!](https://github.
 
 [Lucas G Silva](https://github.com/LucasGSilva21) ([Linkedin](https://www.linkedin.com/in/lucas-gabriel-30aab4183/))
 
-[Alexandrite](https://www.linkedin.com/in/alexandrite-oliveira-55b79b198))
+[Alexandrite](https://www.linkedin.com/in/alexandrite-oliveira-55b79b198)
 
 [Priscylla Boente](https://www.linkedin.com/in/priscyllaboente/)
 
