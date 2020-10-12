@@ -24,14 +24,14 @@
   
 - Payment
 
-    <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/entrepreneur1.png"  height="400em"/>
-    <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/entrepreneur2.png"  height="400em"/>
+  <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/entrepreneur1.png"  height="400em"/>
+  <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/entrepreneur2.png"  height="400em"/>
 
 - Profile
 
-      <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/profile.png" height="400em" />
-      <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/journey.png" height="400em"/>
-      <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/deleteacc.png" height="400em"/>
+  <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/profile.png" height="400em"/>
+  <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/journey.png" height="400em"/>
+  <img src="https://github.com/manbbo/GetClub/blob/master/GetClub/screenshots/deleteacc.png" height="400em"/>
 
 - Help Button / Sponsorship Button
 
