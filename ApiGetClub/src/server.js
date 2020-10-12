@@ -13,7 +13,7 @@ const server = require('http').createServer(app);
 const socket = require('socket.io')(server);
 
 socket.on('connection', async (socket) => {
-    console.log('user connected');
+    //console.log('user connected');
     //console.log(socket.handshake.query);
     let sender = socket.handshake.query.sender;
     let addressee = socket.handshake.query.addressee;
