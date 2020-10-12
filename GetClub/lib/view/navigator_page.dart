@@ -3,6 +3,7 @@ import 'package:getclub/pages/chat.dart';
 import 'package:getclub/pages/home.dart';
 import 'package:getclub/pages/search.dart';
 import 'package:getclub/pages/user.dart';
+import 'package:getclub/services/chat.dart';
 
 class Navigation extends StatefulWidget {
   @override
@@ -15,7 +16,7 @@ class _NavigationState extends State<Navigation> {
     new User_Page(),
     new Home_Page(),
     new Search_Page(),
-    new Chat_Page()
+    new ChatPage()
   ];
 
   int indexer = 1;

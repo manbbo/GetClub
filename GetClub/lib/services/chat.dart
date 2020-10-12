@@ -136,8 +136,7 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) {
     height = MediaQuery.of(context).size.height;
     width = MediaQuery.of(context).size.width;
-    return Scaffold(
-      body: SingleChildScrollView(
+    return SingleChildScrollView(
         child: Column(
           children: <Widget>[
             SizedBox(height: height * 0.1),
@@ -145,7 +144,6 @@ class _ChatPageState extends State<ChatPage> {
             buildInputArea(),
           ],
         ),
-      ),
-    );
+      );
   }
 }
